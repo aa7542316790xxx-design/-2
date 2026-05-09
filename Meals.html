@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meals</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+<body>
+       <nav>
+        <a href="./home.html">الرئيسية</a>
+<a href="./AboutUs.html">من نحن</a>
+
+        <a href="./servieces.html">الخدمات</a>
+      <a href="./contact.html">معلومات التواصل</a>
+      
+
+   <a href="./Meals.html">الوجبات</a>
+
+
+
+
+ </nav>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>الرمز</th>
+                <th>الوجبة</th>
+                <th>السعر</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SF-001</td>
+                <td>وجبة سمك بوري مشوي لشخصين</td>
+                <td>110000 ل.س</td>
+                <td><label class="custom1"><input type="checkbox" class="black-box" onclick="toggleDetails('details-1')"><span class="checkmark"></span></label></td>
+                <td><label class="custom1"><input type="checkbox" class="blue"><span class="checkmark"></span></label></td>
+            </tr>
+            <tr id="details-1" style="display: none; background-color: #ffffff;">
+                <td colspan="5">
+                    <div style="display: flex; justify-content: space-between; padding: 50px; text-align: right; border: 1px solid #ccc;">
+                        <div style="flex: 2; padding-right: 20px;">
+                            <p><strong>المطبخ:</strong> المصري</p>
+                            <p><strong>تصنيف الطعام:</strong> مأكولات بحرية</p>
+                            <p><strong>المكونات:</strong></p>
+                            <ul>
+                                <li>4 سمكات بوري أحمر، مغسول ومنظف.</li>
+                                <li>بضعة أوراق من الأوريجانو الطازج، مقطعة.</li>
+                                <li>1 ملعقة صغيرة من ملح الطعام.</li>
+                                <li>1 ملعقة صغيرة من الفلفل الأسود المطحون.</li>
+                            </ul>
+                            <p><strong>الصلصة:</strong></p>
+                            <ul>
+                                <li>1 ملعقة كبيرة من زيت الزيتون.</li>
+                                <li>3 فصوص ثوم مقشرة ومقطعة بشكل ناعم.</li>
+                                <li>1 حبة فلفل أحمر طازج، منزوعة البذور ومقطعة إلى شرائح رفيعة.</li>
+                                <li>6 حبات طماطم طرية، مفرومة.</li>
+                                <li>1/2 ليمونة معصورة.</li>
+                                <li>ضمة صغيرة من البقدونس الطازج المفروم.</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <img src="IMG_20260429_173929_368.png" alt="وجبة سمك" style="width: 250px; border-radius: 5px;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SF-002</td>
+                <td>برغر لحم بقر</td>
+                <td>120000 ل.س</td>
+                <td><label class="custom1"><input type="checkbox" class="black-box" onclick="toggleDetails('details-2')"><span class="checkmark"></span></label></td>
+                <td><label class="custom1"><input type="checkbox" class="blue"><span class="checkmark"></span></label></td>
+            </tr>
+            <tr id="details-2" style="display: none; background-color: #ffffff;">
+                <td colspan="5">
+                    <div style="display: flex; justify-content: space-between; padding: 20px; text-align: right; border: 1px solid #ccc;">
+                        <div style="flex: 2; padding-right: 20px;">
+                            <p><strong>المطبخ:</strong> الأميركي</p>
+                            <p><strong>تصنيف الطعام:</strong> وجبة سريعة</p>
+                            <p><strong>المكونات:</strong></p>
+                            <ul>
+                                <li>لحم بقري مشوي.</li>
+                                <li>خبز برغر.</li>
+                                <li>خس.</li>
+                                <li>طماطم.</li>
+                                <li>بصل.</li>
+                                <li>جبن الشيدر.</li>
+                            </ul>
+                            <p><strong>الصلصة:</strong></p>
+                            <ul>
+                                <li>مايونيز.</li>
+                                <li>صلصة باربيكيو.</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <img src="IMG_20260429_173929_388.jpg" alt="برغر" style="width: 250px; border-radius: 5px;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SF-003</td>
+                <td>باستا ألفريدو بالدجاج</td>
+                <td>150000 ل.س</td>
+                <td><label class="custom1"><input type="checkbox" class="black-box" onclick="toggleDetails('details-3')"><span class="checkmark"></span></label></td>
+                <td><label class="custom1"><input type="checkbox" class="blue"><span class="checkmark"></span></label></td>
+            </tr>
+            <tr id="details-3" style="display: none; background-color: #ffffff;">
+                <td colspan="5">
+                    <div style="display: flex; justify-content: space-between; padding: 20px; text-align: right; border: 1px solid #ccc;">
+                        <div style="flex: 2; padding-right: 20px;">
+                            <p><strong>المطبخ:</strong> الإيطالي</p>
+                            <p><strong>تصنيف الطعام:</strong> طبق رئيسي</p>
+                            <p><strong>المكونات:</strong></p>
+                            <ul>
+                                <li>معكرونة.</li>
+                                <li>صدور دجاج مشوية.</li>
+                                <li>كريمة.</li>
+                                <li>جبن بارميزان.</li>
+                                <li>ثوم.</li>
+                            </ul>
+                            <p><strong>الصلصة:</strong></p>
+                            <ul>
+                                <li>صلصة الفريدو الكريمية.</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <img src="IMG_20260429_173928_955.jpg" alt="معكرونة" style="width: 250px; border-radius: 5px;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SF-004</td>
+                <td>سلمون مشوي مع خضار</td>
+                <td>130000 ل.س</td>
+                <td><label class="custom1"><input type="checkbox" class="black-box" onclick="toggleDetails('details-4')"><span class="checkmark"></span></label></td>
+                <td><label class="custom1"><input type="checkbox" class="blue"><span class="checkmark"></span></label></td>
+            </tr>
+            <tr id="details-4" style="display: none; background-color: #ffffff;">
+                <td colspan="5">
+                    <div style="display: flex; justify-content: space-between; padding: 20px; text-align: right; border: 1px solid #ccc;">
+                        <div style="flex: 2; padding-right: 20px;">
+                            <p><strong>المطبخ:</strong> العالمي</p>
+                            <p><strong>تصنيف الطعام:</strong> وجبة صحية</p>
+                            <p><strong>المكونات:</strong></p>
+                            <ul>
+                                <li>شريحة سلمون مشوية.</li>
+                                <li>بروكلي.</li>
+                                <li>جزر.</li>
+                                <li>أرز بني.</li>
+                            </ul>
+                            <p><strong>الصلصة:</strong></p>
+                            <ul>
+                                <li>صلصة الليمون والزبدة.</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <img src="IMG_20260429_173929_186.jpg" alt="سمك" style="width: 250px; border-radius: 5px;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SF-005</td>
+                <td>برياني دجاج</td>
+                <td>180000 ل.س</td>
+                <td><label class="custom1"><input type="checkbox" class="black-box" onclick="toggleDetails('details-5')"><span class="checkmark"></span></label></td>
+                <td><label class="custom1"><input type="checkbox" class="blue"><span class="checkmark"></span></label></td>
+            </tr>
+            <tr id="details-5" style="display: none; background-color: #ffffff;">
+                <td colspan="5">
+                    <div style="display: flex; justify-content: space-between; padding: 20px; text-align: right; border: 1px solid #ccc;">
+                        <div style="flex: 2; padding-right: 20px;">
+                            <p><strong>المطبخ:</strong> الهندي</p>
+                            <p><strong>تصنيف الطعام:</strong> طبق رئيسي</p>
+                            <p><strong>المكونات:</strong></p>
+                            <ul>
+                                <li>أرز برياني.</li>
+                                <li>قطع دجاج متبلة.</li>
+                                <li>زعفران.</li>
+                                <li>لوز.</li>
+                                <li>مزيج من البهارات الهندية.</li>
+                            </ul>
+                            <p><strong>الصلصة:</strong></p>
+                            <ul>
+                                <li>صلصة رائبة.</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <img src="IMG_20260429_173929_564.jpg" alt="برياني" style="width: 250px; border-radius: 5px;">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <button type="button" class="btn-next">متابعة</button>
+    </div>
+
+    <div id="customerForm" style="display: none; width: 60%; margin: 30px auto; padding: 20px; background-color: #f0e6d2; border-radius: 15px; border: 1px solid #d4a373;">
+        <h3 style="text-align: center; color: #6b3e1c;">معلومات مقدم الطلب</h3>
+        <div style="margin-bottom: 15px;">
+            <label style="display: inline-block; width: 150px; font-weight: bold;">الاسم الكامل (عربي فقط):</label>
+            <input type="text" id="fullName" style="width: 250px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            <div id="nameError" style="color: red; font-size: 12px; margin-right: 155px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label style="display: inline-block; width: 150px; font-weight: bold;">الرقم الوطني (11 خانة):</label>
+            <input type="text" id="nationalId" maxlength="11" style="width: 250px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            <div id="idError" style="color: red; font-size: 12px; margin-right: 155px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label style="display: inline-block; width: 150px; font-weight: bold;">تاريخ الولادة:</label>
+            <input type="date" id="birthDate" placeholder="dd-mm-yyyy" style="width: 250px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            <div id="dateError" style="color: red; font-size: 12px; margin-right: 155px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label style="display: inline-block; width: 150px; font-weight: bold;">رقم الموبايل:</label>
+            <input type="tel" id="mobile" placeholder="+963 9** *** ***" style="width: 250px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            <div id="mobileError" style="color: red; font-size: 12px; margin-right: 155px;"></div>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label style="display: inline-block; width: 150px; font-weight: bold;">البريد الإلكتروني:</label>
+            <input type="email" id="email" placeholder="exam123@gmail.com" style="width: 250px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+            <div id="emailError" style="color: red; font-size: 12px; margin-right: 155px;"></div>
+        </div>
+        <div style="text-align: center;">
+            <input type="button" id="submitOrderBtn" value="إرسال الطلب" style="background-color: #5a8f4c; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;">
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var detailsRow = document.getElementById(id);
+            if (detailsRow.style.display === "none") {
+                detailsRow.style.display = "table-row";
+            } else {
+                detailsRow.style.display = "none";
+            }
+        }
+
+        document.querySelector('.btn-next').onclick = function() {
+            var checkedBoxes = document.querySelectorAll('.blue:checked');
+            if (checkedBoxes.length === 0) {
+                alert('الرجاء اختيار وجبة واحدة على الأقل');
+                return;
+            }
+            var formDiv = document.getElementById('customerForm');
+            formDiv.style.display = 'block';
+            formDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+
+        function validateForm() {
+            var valid = true;
+
+            var name = document.getElementById('fullName').value.trim();
+            var namePattern = /^[ء-ئ\u0621-\u064A ]+$/;
+            if (name === '' || !namePattern.test(name)) {
+                document.getElementById('nameError').innerText = 'الاسم يجب أن يكون بالعربية فقط';
+                valid = false;
+            } else {
+                document.getElementById('nameError').innerText = '';
+            }
+
+            var nationalId = document.getElementById('nationalId').value.trim();
+            var idPattern = /^(0[1-9]|1[0-4])\d{9}$/;
+            if (nationalId === '' || !idPattern.test(nationalId)) {
+                document.getElementById('idError').innerText = 'الرقم الوطني يجب أن يكون 11 خانة ويبدأ بـ 01-14';
+                valid = false;
+            } else {
+                document.getElementById('idError').innerText = '';
+            }
+/*
+            var birthDate = document.getElementById('birthDate').value.trim();
+            var datePattern = /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-(19|20)\d{2}$/;
+            if (birthDate !== '' && !datePattern.test(birthDate)) {
+                document.getElementById('dateError').innerText = 'الصيغة الصحيحة: dd-mm-yyyy';
+                valid = false;
+            } else {
+                document.getElementById('dateError').innerText = '';
+            }
+*/
+            var mobile = document.getElementById('mobile').value.trim();
+            var mobilePattern = /^09\d{8}$/;
+            if (mobile !== '' && !mobilePattern.test(mobile)) {
+                document.getElementById('mobileError').innerText = 'رقم الموبايل يبدأ بـ 09 ويتكون من 10 أرقام';
+                valid = false;
+            } else {
+                document.getElementById('mobileError').innerText = '';
+            }
+
+            var email = document.getElementById('email').value.trim();
+            var emailPattern = /^[^\s@]+@([^\s@.,]+\.)+[^\s@.,]{2,}$/;
+            if (email !== '' && !emailPattern.test(email)) {
+                document.getElementById('emailError').innerText = 'بريد إلكتروني غير صحيح';
+                valid = false;
+            } else {
+                document.getElementById('emailError').innerText = '';
+            }
+
+            return valid;
+        }
+
+        document.getElementById('submitOrderBtn').onclick = function() {
+            if (!validateForm()) {
+                alert('يرجى تصحيح الأخطاء في النموذج');
+                return;
+            }
+
+            var selectedMeals = [];
+            var total = 0;
+            var allRows = document.querySelectorAll('tbody tr');
+
+            for (var i = 0; i < allRows.length; i++) {
+                var row = allRows[i];
+                var checkbox = row.querySelector('.blue');
+                if (checkbox && checkbox.checked) {
+                    var code = row.querySelector('td:first-child') ? row.querySelector('td:first-child').innerText : '';
+                    var mealName = row.querySelector('td:nth-child(2)') ? row.querySelector('td:nth-child(2)').innerText : '';
+                    var priceText = row.querySelector('td:nth-child(3)') ? row.querySelector('td:nth-child(3)').innerText : '';
+                    var price = parseInt(priceText.replace(/[^0-9]/g, ''));
+                    selectedMeals.push(code + ' - ' + mealName + ' : ' + price + ' ل.س');
+                    total = total + price;
+                }
+            }
+
+            var tax = total * 0.05;
+            var finalTotal = total + tax;
+
+            var message = '===== فاتورة الطلب =====\n\n';
+            message = message + 'الوجبات المختارة:\n';
+            for (var j = 0; j < selectedMeals.length; j++) {
+                message = message + selectedMeals[j] + '\n';
+            }
+            message = message + '\nالمجموع: ' + total + ' ل.س';
+            message = message + '\nالضريبة 5%: ' + tax + ' ل.س';
+            message = message + '\nالمبلغ النهائي: ' + finalTotal + ' ل.س\n\n';
+            message = message + 'شكراً لاختياركم مطعمنا';
+
+            alert(message);
+        };
+    </script>
+    
+</a>
+</body>
+
+</html>
